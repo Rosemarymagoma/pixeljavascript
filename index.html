@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Learning Practice</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            color: #173b70;
+        }
+
+        section {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        button {
+            background-color: #1769aa;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #0d4777;
+        }
+
+        input {
+            padding: 10px;
+            width: 90%;
+            max-width: 350px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .parent {
+            background: #e5efff;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .parent div {
+            background: white;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .highlight {
+            background-color: yellow;
+            padding: 5px;
+        }
+
+        #message {
+            font-weight: bold;
+            color: green;
+        }
+
+        #data-container {
+            background: #f8f8f8;
+            padding: 15px;
+        }
+
+        .post {
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- PAGE HEADING -->
+        <header>
+            <h1 id="heading">Welcome to JavaScript</h1>
+
+            <p>
+                Learning JavaScript from scratch through practical examples.
+            </p>
+        </header>
+
+        <!-- SECTION 1: BUTTON EVENTS -->
+        <section>
+
+            <h2>1. JavaScript Functions and Events</h2>
+
+            <button onclick="sayHello()">
+                Say Hello
+            </button>
+
+            <p id="message">Click the button to interact.</p>
+
+        </section>
+
+        <!-- SECTION 2: DOM MANIPULATION -->
+        <section>
+
+            <h2>2. DOM Manipulation</h2>
+
+            <button id="changeButton">
+                Change Heading
+            </button>
+
+            <button id="colorButton">
+                Change Heading Color
+            </button>
+
+        </section>
+
+        <!-- SECTION 3: DOM TRAVERSING -->
+        <section>
+
+            <h2>3. Parent and Child Elements</h2>
+
+            <div class="parent">
+
+                <div>Child One</div>
+
+                <div>Child Two</div>
+
+                <div>Child Three</div>
+
+            </div>
+
+        </section>
+
+        <!-- SECTION 4: LINKS -->
+        <section>
+
+            <h2>4. HTML Attributes</h2>
+
+            <a href="#" target="_blank">
+                Visit Website
+            </a>
+
+        </section>
+
+        <!-- SECTION 5: INPUT EVENTS -->
+        <section>
+
+            <h2>5. Input Events</h2>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter your name"
+            >
+
+            <p id="output"></p>
+
+        </section>
+
+        <!-- SECTION 6: FORM VALIDATION -->
+        <section>
+
+            <h2>6. Form Submission and Validation</h2>
+
+            <form id="myForm">
+
+                <input
+                    type="text"
+                    id="formInput"
+                    placeholder="Enter something"
+                >
+
+                <br>
+
+                <button type="submit">
+                    Submit Form
+                </button>
+
+            </form>
+
+            <p id="formMessage"></p>
+
+        </section>
+
+        <!-- SECTION 7: API DATA -->
+        <section>
+
+            <h2>7. Fetching Data from an API</h2>
+
+            <p>
+                The posts below will be loaded from a testing API.
+            </p>
+
+            <button id="loadDataButton">
+                Load API Data
+            </button>
+
+            <div id="data-container">
+                <p>API data will appear here.</p>
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>
+                JavaScript Practice Project |
+                Learning Web Development
+            </p>
+
+        </footer>
+
+    </div>
+
+    <!-- JAVASCRIPT FILE -->
+    <script src="script.js"></script>
+
+</body>
+</html>
